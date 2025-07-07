@@ -75,5 +75,5 @@ function resetScores() {
     document.getElementById("computer-score").innerText = "0";
     userChoiceDisplay.innerText = '';
     computerChoiceDisplay.innerText = '';
-    resultDisplay.innerText = 'Result shown here';
+    resultDisplay.innerText = '';
 }
