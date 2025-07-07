@@ -55,3 +55,11 @@ function scoreUser(){
     document.getElementById("user-score").innerText = ++oldScore;
 
 }
+
+function resetScores() {
+    document.getElementById("user-score").innerText = "0";
+    document.getElementById("computer-score").innerText = "0";
+    document.userChoiceDisplay.innerText = '';
+    document.computerChoiceDisplay.innerText = '';
+    document.resultDisplay.innerText = '';
+}
