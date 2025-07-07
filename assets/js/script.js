@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
  It also updates the display elements to show the user's choice, computer's choice, and the result */
 function playGame(event) {
     const userChoice = event.target.getAttribute('data-choice'); // Get the user's choice from the clicked element
-    userChoiceDisplay.innerText = userChoice; // Display the user's choice
+    userChoiceDisplay.innerHTML = "<img src='assets/images/" + userChoice + ".png' alt='" + userChoice + "'>"; // Display the user's choice as an image
     const computerChoice = getComputerChoice(); // Get the computer's choice
-    computerChoiceDisplay.textContent = computerChoice; // Display the computer's choice
+    computerChoiceDisplay.innerHTML = "<img src='assets/images/" + computerChoice + ".png' alt='" + computerChoice + "'>"; // Display the computer's choice as an image
     const result = determineWinner(userChoice, computerChoice); // Determine the winner
     resultDisplay.textContent = result; // Display the result
 }
