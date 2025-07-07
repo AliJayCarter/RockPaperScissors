@@ -2,8 +2,6 @@ const choices = document.querySelectorAll('.choice'); // Stores all the choices 
 const userChoiceDisplay = document.getElementById('user-choice'); //To be set once user clicks on a choice
 const computerChoiceDisplay = document.getElementById('computer-choice'); //To be set once computer makes a choice
 const resultDisplay = document.getElementById('result'); //To be set once the result(who the winner is) is determined
-const userScoreDisplay = document.querySelector('.user-score'); //To be set once the user score is updated
-const computerScoreDisplay = document.querySelector('.computer-score'); //To be set once the computer score is updated
 
 document.addEventListener('DOMContentLoaded', function() {  
     // Add event listener to the reset button
